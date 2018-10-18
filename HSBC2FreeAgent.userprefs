@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HSBC2FreeAgent\MainWindow.cs">
+    <Files>
+      <File FileName="HSBC2FreeAgent\Program.cs" Line="13" Column="24" />
+      <File FileName="HSBC2FreeAgent\CSVData.cs" Line="10" Column="22" />
+      <File FileName="HSBC2FreeAgent\MainWindow.cs" Line="39" Column="51" />
+      <File FileName="HSBC2FreeAgent\FileDialogMethods.cs" Line="25" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
