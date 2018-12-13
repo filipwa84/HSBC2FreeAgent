@@ -2,6 +2,7 @@
 using System.IO;
 using System.Text;
 using System.Collections.Generic;
+using System.Globalization;
 using Gtk;
 
 
@@ -115,12 +116,12 @@ public partial class MainWindow: Gtk.Window
 
 				if (isNum2 == true ) {
 					listCSVData.Add (new HSBC2FreeAgent.CSVData {
-						date = items [0],
+						date = DateTime.Parse(items [0]).Date.ToString("d", DateTimeFormatInfo.InvariantInfo),
 						desctiption = items [1],
 						amount = (-tmp2).ToString ()
 					});
 				} else if(isNum3==true) {
-					listCSVData.Add (new HSBC2FreeAgent.CSVData{ date = items [0], desctiption = items [1], amount = tmp3.ToString() });
+					listCSVData.Add (new HSBC2FreeAgent.CSVData{ date = DateTime.Parse(items[0]).Date.ToString("d", DateTimeFormatInfo.InvariantInfo), desctiption = items [1], amount = tmp3.ToString() });
 
 				}
 
