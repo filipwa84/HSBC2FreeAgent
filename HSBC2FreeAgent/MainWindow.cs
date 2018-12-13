@@ -116,12 +116,12 @@ public partial class MainWindow: Gtk.Window
 
 				if (isNum2 == true ) {
 					listCSVData.Add (new HSBC2FreeAgent.CSVData {
-						date = DateTime.Parse(items [0]).Date.ToString("d", DateTimeFormatInfo.InvariantInfo),
+						date = DateTime.Parse(items [0]).Date.ToString("dd/MM/yyy", CultureInfo.InvariantCulture),
 						desctiption = items [1],
 						amount = (-tmp2).ToString ()
 					});
 				} else if(isNum3==true) {
-					listCSVData.Add (new HSBC2FreeAgent.CSVData{ date = DateTime.Parse(items[0]).Date.ToString("d", DateTimeFormatInfo.InvariantInfo), desctiption = items [1], amount = tmp3.ToString() });
+					listCSVData.Add (new HSBC2FreeAgent.CSVData{ date = DateTime.Parse(items[0]).Date.ToString("dd/MM/yyy", CultureInfo.InvariantCulture), desctiption = items [1], amount = tmp3.ToString() });
 
 				}
 
